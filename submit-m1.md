@@ -34,5 +34,5 @@
 
 **Sign your name and include today's date and time to submit your MILESTONE 1.**
 
-- Full Name: Jonathan Temkin 
+- Full Name: Jonathan Temkin
 - Date & Time: 11:15pm
