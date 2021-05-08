@@ -1,0 +1,114 @@
+/* Fun/bold theme */
+
+body {
+  background-color:rgb(56, 176, 240);
+  font-family: cursive;
+  font-weight: bold;
+}
+
+
+nav {
+    color: black;
+    overflow: hidden;
+}
+
+
+/* used general idea from https://www.w3schools.com/css/css_navbar_vertical.asp
+and https://daks.me/css_navbar.php*/
+nav li {
+  border: 2px solid;
+  border-width: thin;
+  border-color: black;
+  text-align: center;
+  list-style-type: none;
+  background-color: lightgrey;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TB chapter 14 */
+nav li:hover {
+    background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+
+}
+
+li.one {
+    background-color: yellow;
+}
+
+li.two {
+    background-color: green;
+}
+
+li.three {
+    background-color: orange;
+}
+
+h1 {
+  color: black;
+  text-decoration: underline;
+  font-family: fantasy;
+  font-size: 300%;
+  text-decoration: none;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: black;
+  text-decoration: underline;
+}
+
+p {
+  color: black;
+  font-size: large;
+}
+
+p.one {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 180%;
+}
+
+p em {
+  font-style: normal;
+  background-color: yellow;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+table {
+  font-family: monospace;
+  color: black;
+}
+
+th {
+  font-weight: bolder;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+/* Citation: https://www.w3.org/Style/Examples/007/evenodd.en.html*/
+tr:nth-child(even) {
+    background-color: orange;
+}
+/* Citation: https://www.w3.org/Style/Examples/007/evenodd.en.html*/
+tr:nth-child(odd) {
+    background-color: green;
+}
+
+cite.second {
+    white-space: pre-line;
+}
+
+fieldset.second {
+    margin-top: 5px;
+}

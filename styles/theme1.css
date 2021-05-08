@@ -1,0 +1,181 @@
+
+/* Professional theme */
+
+body {
+  background-color: beige;
+  font-family: sans-serif;
+}
+
+nav {
+    color: black;
+    overflow: hidden;
+    overflow: auto;
+}
+
+.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+}
+
+.first-row{
+    background-color:#AAAA;
+}
+
+.box {
+    text-align: center;
+    align-items: center;
+}
+
+
+.box1 img {
+    padding: 5px;
+}
+
+.imgbox {
+    text-align: center;
+    align-items: center;
+    border: 2px solid lightgrey;
+    margin: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 510px;
+}
+
+.imgbox:hover {
+    border-color:black;
+}
+
+.imgtitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* used general idea from https://www.w3schools.com/css/css_navbar_vertical.asp
+and https://daks.me/css_navbar.php*/
+
+/* NAVIGATION BAR */
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav li {
+    display: inline-block;
+    margin-left:  50px;
+    margin-right: 50px;
+}
+
+
+nav li:hover {
+    background-color: yellow;
+}
+
+nav li:active {
+    background-color: black;
+}
+
+
+h1 {
+  color: black;
+  text-decoration: underline;
+  font-family: serif;
+  font-size: 300%;
+  text-decoration: none;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: black;
+}
+
+p {
+  color: black;
+  font-weight: normal;
+  font-size: large;
+}
+
+p.one {
+    text-align: center;
+    font-family: serif;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+p em {
+  font-style: normal;
+  font-weight: bold;
+
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+table {
+  font-family: monospace;
+  color: black;
+}
+
+th {
+  font-weight: bolder;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+/* Citation: https://www.w3.org/Style/Examples/007/evenodd.en.html*/
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+cite  {
+    white-space: pre-line;
+    font-size: small;
+}
+
+fieldset.second {
+    margin-top: 5px;
+}
+
+fieldset li {
+    font-size: large;
+    list-style-type: none;
+}
+
+
+/* Adapted from my lab 8 solution, project2 */
+label {
+    display: inline-block;
+    float: left;
+    width: 35%;
+    font-weight: bold;
+}
+
+fieldset {
+    max-width: 95%;
+    margin: auto;
+}
+
+
+.largetext textarea {
+    height: 80px;
+    width: 250px;
+}
+
+.submit {
+    float: right;
+    margin-right: 7%;
+}
+
+.text, .dropdown, .largetext, .email {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

@@ -13,71 +13,86 @@ You can use bullet points and lists, or full paragraphs, or a combination, which
 ## Project 1 or Project 2
 > Which project will you add a form to?
 
-Project 1 or 2 (TODO: pick one)
-
+Project 1
 
 ## Audience (Milestone 1)
 > Who is your site's target audience? This should be the original audience from Project 1 or Project 2. You may adjust the audience if necessary. Just make sure you explain your rationale for doing so here.
 
-TODO
-
+The intended audience is prospective employers and collegues who would want a succient
+summary of my academic background and skills to determine whether I would be
+a good fit for their company and to get to know more about me.
 
 ## Audience's Needs (Milestone 1)
 > List the audience's needs that you identified in Project 1 or 2. Just list each need. No need to include the "Design Ideas and Choices", etc. You may adjust the needs if necessary. However, any changes you make to the needs for this project should be clearly identified and justified.
 
-- TODO: Need 1
-- TODO: Need 2
-- TODO: ...
-- ...
+-Information about myself such as which programming languages I'm fluent in,
+my work experience, and my favorite passtimes.
+
+-Contact information
+to facilitate communication.
+
+-Examples of my previous work to demonstrate skill.
+
 
 
 ## HTML Form + User Needs Brainstorming (Milestone 1)
 > Using the audience needs you identified, brainstorm possible options for an HTML form for the site. List each idea and provide a brief rationale for how the HTML form addresses that need.
 
-- TODO
-- TODO
-- ...
+- A project inquiry form in which the user can specify a type of project and a competition date and I can response with whether or not I am able to accommodate the request.
+
+- A project history form in which users can specify a certain type of project and I can share any relevant work i've done in the past.
+
+- A contact form.
+
 
 
 ## HTML Form Proposal & Rationale (Milestone 1)
 > Make a decision about your site's form. Describe the purpose of your proposed form for your Project 1 or 2 site. Provide a brief rationale explaining how your proposed form meets the needs of your site's audience.
 > Note: If your form is a contact form, we expect to see a thorough justification explaining how a contact form addresses the user's _actual_ needs. In your justification explain how a contact form better suits the needs of your user compared to the alternatives (e.g. sending you an email using your email address).
 
-Form Proposal: TODO
+Form Proposal: project history form
 
-User Needs Rational: TODO
+User Needs Rational: One of the needs of my users is to view my previous works in order to assess my programming skills. This form will faciitate that need by allowing users to specify projects i've done in the past based on certain criteria.
 
 
 ## Form User Data (Milestone 1)
 > Think through and plan the data you need to collect from the users. Do you need their name? Email address? etc.
 
-- TODO
-- ...
+- Name
+- email address (to share the project with them)
+- GitHub username (to add them to the GitHub repo)
+- the programming language of the project (Java, HTMl, etc.)
+- type of project (game, website, etc.).
+
 
 
 ## Form Components & Validation Criteria (Milestone 1)
 > For each piece of data you plan to collect from the users, identify an appropriate HTML component to collect that data and decide the validation criteria (e.g. whether this data is _required_). Briefly explain your reasoning for the component choice and the validation criteria.
 
-- TODO
-- Name (required): text field; `<input type="text">`
-- ...
+- Name: Required sine I need to know who is making the request. I would use a text box to collect
+ the user's name.
+- email address is required so that I can contact the user. I'll use the "email" input type.
+- GitHub username is optional due to accessibility concerns. I'll use the text box.
+- the programming language of the project (Java, HTMl, etc.) is mandatory so that I can ascertain
+the type of project the user wants. I'll implement it with a dropdown menu (and the menu will include a default 'any' option)
+- type of project so I know what type of project the user wants (e.g. game, compiler, etc.) and
+it'll be implemented with a large text box.
 
 
 ## Form Location (Milestone 1)
-> Which HTML file will you place your form?
+ (skills.html)
 
-TODO (index.html)
 
 > Sketch the location of the form in that page. This sketch need not be fancy. You don't need to provide many details of the page or form. Just plan the location of the form on the page and communicate that to us. You can literally have a box that says "FORM HERE."
 
 **Desktop Location**
 
-TODO
+![desktop](desktop.png)
 
 
 **Mobile Location**
 
-TODO
+![mobile](mobile.png)
 
 
 ## Form Design (Milestone 1)
@@ -85,11 +100,11 @@ TODO
 
 **Desktop Sketches**
 
-TODO
+![desktop-no-feedback](desktopnofeedback.png)
 
 **Mobile Sketches**
 
-TODO
+![mobile-no-feedback](mobilenofeedback.png)
 
 
 ## Form Feedback Design (Milestone 1)
@@ -97,30 +112,30 @@ TODO
 
 **Desktop Feedback**
 
-TODO
+![desktop-feedback](desktopfeedback.png)
 
 
 **Mobile Feedback**
 
-TODO
+![mobile-feedback](mobilefeedback.png)
 
 
 ## Form Implementation Planning (Milestone 1)
 > What submission method will your form use? GET or POST. Explain your reasoning.
 
-TODO
+I'll use post because I want the data to be private and I want to upload it to a server.
 
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
-- `method="TODO"`
-- TODO
-- ...
+- method=Get
+- action= https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php
+- novalidate when the user has not entered a valid name, email or project type
 
 
 ## Additional Information (Milestone 1)
 > (optional) Include any additional information, justifications, or comments we should be aware of.
 
-TODO
+I included a contact form in my original submission that I will not be modifying in any way.
 
 
 ## Plan Validation Pseudocode (Final Submission)
