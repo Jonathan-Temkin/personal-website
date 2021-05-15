@@ -128,8 +128,8 @@ I'll use post because I want the data to be private and I want to upload it to a
 > For your site's `<form>` element, plan all HTML attributes that you will need and their values. Hint: action=, method=, novalidate
 
 - method=Get
-- action= https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php
-- novalidate when the user has not entered a valid name, email or project type
+- action=https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php
+- novalidate because I want to disable the default HTML validation
 
 
 ## Additional Information (Milestone 1)
@@ -140,29 +140,42 @@ I included a contact form in my original submission that I will not be modifying
 
 ## Plan Validation Pseudocode (Final Submission)
 > Write your form validation pseudocode here.
+    When the user submits a form:
 
-```
-TODO
-```
+        if the name field is valid (not blank):
+            hide name feedback
+        else:
+            show name feedback
+
+        if the email field is valid (contains a valid email address):
+            hide email feedback
+        else:
+            show email feedback_
+
+        if the project type is valid (not blank):
+            hide project type feedback
+        else:
+            show project type feedback
+
 
 
 ## Additional Design Justifications (Final Submission)
 > If you feel like you haven’t fully explained your design choices in the final submission, or you want to explain some functions in your site (e.g., if you feel like you make a special design choice which might not meet the final requirement), you can use the additional design justifications to justify your design choices. Remember, this is place for you to justify your design choices which you haven’t covered in the design journey. Use it wisely. However, you don’t need to fill out this section if you think all design choices have been well explained in the final submission design journey.
 
-TODO
+I think my form provides a good way for potential employers/collegues to guage my knowledge of a specific topic by requesting a certain type of project that i've already done. This type of form isn't common (as far as i'm aware), but i think it would have utility for my audience and i therefore elected to implement it.
 
 
 ## Self-Reflection (Final Submission)
 > This was the first project in this class where you coded some JavaScript. What did you learn from this experience?
 
-TODO
+I found that writing out the pseudocode prior to coding helped me a lot. It was also very helpful to review the snipits and their operations prior to attempting the code. It taught me how to reference items and how to perform basic operations on them.
 
 
 > Reflect on how HTML, CSS, and JavaScript together support client-side interactivity. If it's helpful, you can describe your mental model of client-side interactivity or explain how the general idea of showing and hiding content can be used to implement other forms of client-side interactivity beyond form validation and feedback.
 
-TODO
+HTML allows us to implement text and elements. CSS allows us to format and style those elements in a way that's appealing and intuitive to users. JavaScript allows us to implement interactivity. For this project, I used the ability of Javascript to add and remove classes (in this case, the hidden class) to implement custom validation for my form. This feature could also have many other applications. For instance, you could hide or display a field based on prior user feedback. If you were designing a survey, it's common to ask the respondent whether they've experienced x, and if so to describe it. If the user responds yes, you could use javascript to then display a textbox and instruct the respondent to describe the event. This betters the user experience because it ensures the user only responds when they experienced the event. Otherwise, the user may feel obligated to respond even when they don't have to/have nothing to say.
 
 
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
 
-TODO
+I went from not knowing any HTML/CSS or Javascript to being able to code an entire website with interactivity. I think it's a lot of progress for one semester!

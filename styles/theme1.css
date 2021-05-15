@@ -150,7 +150,7 @@ fieldset li {
     list-style-type: none;
 }
 
-
+/* FORM */
 /* Adapted from my lab 8 solution, project2 */
 label {
     display: inline-block;
@@ -178,4 +178,33 @@ fieldset {
 .text, .dropdown, .largetext, .email {
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.feedback{
+    color: red;
+    font-weight: bold;
+    margin-left: 35%; /* since the label width is 35% */
+}
+
+
+/* MOBILE*/
+@media (max-width: 600px) {
+    form {
+       display: block;
+       width: 100%;
+       justify-content: center;
+       margin: 0;
+    }
+
+    label {
+        display: block;
+        float:top;
+    }
+    .dropdown {
+        padding-top: 10px;
+    }
 }

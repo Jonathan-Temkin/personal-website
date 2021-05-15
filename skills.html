@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>contact</title>
-
- <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/>
- <!-- <link rel="stylesheet" type="text/css" href="styles/theme2.css" media="all"/> -->
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/theme2.css" media="all"/> -->
+    <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="scripts/validation.js" type="text/javascript" async></script>
 </head>
 <body>
 
@@ -74,28 +75,37 @@
 <h3> Prior Projects </h3>
 
 <h5> Request to sample my previous programming projects based on specified criteria </h5>
+<h5> Please note that * denotes a mandatory response. </h5>
 
 <fieldset>
-    <!-- partly inspired by my lab 8 solution and project 2 -->
-    <form method = "post" action= "https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
 
+    <!-- partly inspired by my lab 8 solution and project 2 -->
+    <form id = "projectSampleForm" method = "post" action= "https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+
+        <div id = "nameFeedback" class = "feedback hidden">Please enter a valid name</div>
         <div class = "text">
-            <label>Name*:</label>
-            <input type = "text" id = "name" name= "name"/>
+            <input required type="text" id ="name" name= "name" />
+            <!-- explicit label definition https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826 -->
+            <label for ="name" >Name*:</label>
         </div>
 
+        <div id = "emailFeedback" class = "feedback hidden">Please enter a valid email</div>
         <div class = "email">
-            <label>Email*:</label>
-            <input type = "email" id = "email" name= "email"/>
+            <input required type = "email" id = "email" name= "email" />
+            <!-- explicit label definition https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826 -->
+            <label for = "email">Email*:</label>
         </div>
 
         <div class = "username">
-            <label>GitHub Username:</label>
             <input type = "text" id = "username" name= "username"/>
+            <!-- explicit label definition https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826 -->
+            <label for = "username">GitHub Username:</label>
         </div>
 
+
         <div class = "dropdown">
-            <label>Language:</label>
+            <!-- explicit label definition https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826 -->
+            <label for ="languages" >Language:</label>
             <select id = "languages" name= "languages">
                 <!-- default response: https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element -->
                 <option value="any" selected >any </option>
@@ -106,12 +116,16 @@
             </select>
         </div>
 
+
+        <div id = "typeFeedback" class = "feedback hidden">Please specify the type of project you want</div>
         <!-- placeholder for textarea: https://css-tricks.com/textarea-tricks/ -->
         <div class = "largetext">
-            <label>Project Type*:</label>
-            <textarea  id="projecttype" name= "projecttype">Specify the type of project you want (e.g. game, compiler, etc.)</textarea>
+            <label for ="projectType">Project Type*:</label>
+            <textarea id="projectType" name= "projecttype" placeholder = "Specify the type of project you want (e.g. game, compiler, etc.)" required></textarea>
+        <!-- explicit label definition https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826 -->
 
         </div>
+
 
         <div class = "submit">
             <input type = "submit" />
@@ -134,4 +148,9 @@
 <cite class= "second">
     placeholder for textarea: https://css-tricks.com/textarea-tricks/
 </cite>
+
+<cite class= "second">
+    explicit labels: https://www.sitepoint.com/community/t/implicit-explicit-or-both-for-form-labels/8826
+</cite>
+
 </body>
